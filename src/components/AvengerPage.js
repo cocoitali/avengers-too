@@ -4,9 +4,9 @@ import AvengerDetails from "./AvengersDetails";
 import AvengerMovies from "./AvengerMovies";
 
 class AvengerPage extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
   render() {
   const id = this.props.match.params.id;
   const avenger = this.props.avengers.find(avenger => `${avenger.id}` === id); //interpolation changes number id to a 'string'
